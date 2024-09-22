@@ -9,7 +9,7 @@ app = Flask(__name__)
 dotenv.load_dotenv()
 
 def get_db_connection():
-    conn = psycopg2.connect(os.getenv('CONNECTION_STRING'))
+    conn = psycopg2.connect("postgres://avnadmin:AVNS_kEd3qvXSZW_LoEuliQW@interdisciplinar-dion-heitorbelo.h.aivencloud.com:24707/defaultdb?sslmode=require")
 
     return conn
 
